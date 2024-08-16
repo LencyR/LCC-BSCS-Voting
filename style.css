@@ -1,14 +1,245 @@
-.body-container {
-    border-style: solid;
-    border-width: 0.5px;
-    padding: 5%;
-    width: 10%;
-    height: 15vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-body-container {
+    margin-top: 220vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #eee;
+}
+
+body {
+    overflow-y: auto;
+}
+
+div h2 {
+    text-align: center;
+}
+
+.login-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
     border-radius: 15px;
+    padding: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* border-color: rgb(62, 130, 255); */
+    margin-top: 3%;
+}
+
+.login-content-container h2 {
+    margin-bottom: 6%;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 15%;
+    /* padding-left: 5%; */
+}
+
+div div p {
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 15em;
+    border-radius: 5px;
+    border: 1.5px solid;
+    background-color: #eee;
+    padding: 5%;
+    padding-left: 5%;
+}
+
+.input-container {
+    margin-bottom: -8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: calc(5% - 60px);
+}
+
+.navigation-header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    gap: 50px;
+    background-color: #070b3a;
+}
+
+.navigation-header nav div {
+    font-size: large;
+    color: #eee;
+    cursor: pointer;
+}
+
+.navigation-header nav a:nth-child(2) {
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.navigation-header nav:nth-child(1) {
+    -webkit-text-stroke: 0.4px #294299;
+}
+
+.login-button {
+    margin-top: 10%;
+    height: 2.5em;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    flex: auto;
-    flex-direction: column;
+    border-radius: 15px;
+    border-width: 1px;
+    border: 1px none rgb(192, 192, 192);
+    background-color: #0D1F5E;
+    color: #eee;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    opacity: .7;
+}
+
+.login-body-container div h1 {
+    -webkit-text-stroke: 3px #fdfcff;
+    color: #070b3a;
+    font-size: 80px;
+}
+.login-body-container div h3 {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: #eee;
+}
+
+.login-body-container div h4 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #eee;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.body-text-container {
+    background-color: #0D1F5E;
+    border-radius: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1.5%;
+}
+
+.ssc-text {
+    -webkit-text-stroke: transparent;
+    color: #eee;
+}
+
+.fa-square-facebook {
+    font-size: 25px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.fa-right-from-bracket {
+    font-size: 25px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.candidate-card {
+    height: 300px;
+    border-radius: 15px;
+    border: 5px solid #294299;
+}
+
+.candidate-card:hover {
+    border: 7px solid #1c60d6;
+}
+
+.candidate-info-container {
+    margin-top: 3%;
+}
+
+.candidate-info-container p {
+    text-align: center;
+    font-size: 50px;
+    color: #eee;
+    -webkit-text-stroke: 2.5px #294299;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.candidate-card-row-container {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
+}
+
+.candidate-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.home-body-container h1 {
+    -webkit-text-stroke: 0.1px #fdfcff;
+    background-color: #0D1F5E;
+    padding: 2%;
+    border-radius: 15px;
+    color: #eee;
+    width: 61%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.candidate-card-container button {
+    width: 50%;
+    padding: 6%;
+    color: #eee;
+    border: transparent;
+    background-color: #0D1F5E;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.candidate-card-container button:hover {
+    opacity: .7;
 }
